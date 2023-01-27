@@ -17,15 +17,15 @@ const App = () => {
       <div
         style={{
           display: "flex",
-          border: "1px solid red",
+
           width: "100vw",
           height: "100vh",
         }}
       >
-        <div style={{ border: "1px solid red", width: "50%" }}>
+        <div style={{ width: "50%" }}>
           <Maps selectPosition={selectPosition} />
         </div>
-        <div style={{ border: "1px solid red", width: "50%" }}>
+        <div style={{ width: "50%" }}>
           <SearchBox
             selectPosition={selectPosition}
             setSelectPosition={setSelectPosition}
