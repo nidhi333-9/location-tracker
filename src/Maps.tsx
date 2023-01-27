@@ -33,7 +33,10 @@ function ResetCenterView(props: any) {
 // const position = [51.505, -0.09];
 const Maps = (props: any) => {
   const { selectPosition } = props;
-  const locationSelection = [selectPosition?.lat, selectPosition?.lon];
+  const locationSelection: LatLngTuple = [
+    selectPosition?.lat,
+    selectPosition?.lon,
+  ];
   return (
     <MapContainer
       center={defaultLatLng}
